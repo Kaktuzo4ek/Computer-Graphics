@@ -1,0 +1,426 @@
+body {
+  margin: 0;
+  background-color: #004445;
+  z-index: 1;
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Header
+==============================*/
+.header {
+  background-color: #102F31;
+}
+
+.header__logo {
+  display: flex;
+  margin-left: 30px;
+}
+
+#logo_img {
+  width: 124px;
+}
+
+.header__image {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+h1{
+font-size: 100%;
+}
+
+.header__text {
+  margin-left: 25px;
+    padding: 40px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 162px;
+}
+
+.text__logo {
+  color: #fff;
+  font-family: 'Rokkitt', serif;
+  font-weight: 600;
+  font-size: 72px;
+  text-decoration: none;
+}
+
+/* Navigation
+==============================*/
+.nav__link {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Rokkitt', serif;
+  font-weight: 600;
+  font-size: 48px;
+  transition: color .1 linear;
+}
+
+.nav__link:hover {
+  color: #6FB98F;
+  text-decoration: underline;
+}
+
+.nav:last-child {
+  margin-right: 30px;
+}
+
+.nav {
+  margin: 50px 0;
+  display: flex;
+}
+
+/* Fractal Type
+==============================*/
+.fr_type {
+  border-radius: 27px;
+  background-color: #6FB98F;
+  width: 440px;
+  height: 211px;
+  margin: 50px 0 0 75px;
+}
+
+
+.text {
+  color: #fff;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.text--pos {
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.select {
+  text-align: center;
+  width: 261px;
+  height: 45px;
+  color: black;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 36px;
+  border: none;
+}
+
+.select--pos {
+  width: 261px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.iterations {
+  display: flex;
+  width: 261px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.input_iter {
+  width: 101px;
+  height: 45px;
+  color: black;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  border: none;
+}
+
+.iter--pos {
+  margin-top: 36px;
+  margin-left: 19px;
+}
+
+/* Сoordinates of the center
+==============================*/
+.coordinates {
+  border-radius: 27px;
+  background-color: #6FB98F;
+  width: 440px;
+  height: 142px;
+  margin: 80px 0 0 75px;
+}
+
+.coord_text--pos {
+  margin: 0;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.input {
+  display: flex;
+}
+
+.input_x {
+  display: flex;
+}
+
+.input_y {
+  display: flex;
+}
+
+.input_coor {
+  margin-top: 25px;
+  margin-left: 5px;
+  width: 120px;
+  height: 45px;
+  border: none;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+}
+
+#x {
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+#y {
+  margin-top: 25px;
+  margin-left: 65px;
+}
+
+/* Line Color And Style
+==============================*/
+.color {
+  border-radius: 27px;
+  background-color: #6FB98F;
+  width: 440px;
+  height: 470px;
+  margin: 50px 0 0 65px;
+}
+
+.typeAndCoorAndColor{
+  display: flex;
+}
+
+/* Range Slider
+==============================*/
+.slidecontainer {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 40px;
+  height: 60px;
+}
+
+.sym--pos {
+  margin-top: -12px;
+}
+
+.slid_g {
+  display: flex;
+  margin-top: 10px;
+  height: 60px;
+  margin-left: 38px;
+}
+
+.value_rgb {
+  width: 51px;
+  height: 30px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 3px;
+  margin-left: 15px;
+  margin-top: -7px;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.slider {
+  margin-left: 15px;
+  -webkit-appearance: none;
+  width: 252px;
+  height: 12px;
+  border-radius: 17px;
+  background: #fff;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #004445;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 50px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/* Pixel Color Area
+==============================*/
+.pixel_color {
+  width: 366px;
+  height: 63px;
+  border: 2px solid white;
+  border-radius: 27px;
+  margin: 0 auto;
+}
+
+.btn-pos {
+  width: 123px;
+  height: 68px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.btn-ok {
+  width: 123px;
+  height: 68px;
+  border-radius: 27px;
+  border: none;
+  background-color: rgba(0, 68, 69, 0.5);
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  transition: color .1 linear;
+}
+
+.btn-ok:hover {
+  background-color: rgba(0, 68, 69, 1);
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn-build {
+  width: 196px;
+  height: 90px;
+  border-radius: 27px;
+  border: none;
+  background-color: #6FB98F;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  transition: color .1 linear;
+  cursor: pointer;
+}
+
+.btn-build-pos {
+    margin: 26px 0 0 65px;
+}
+
+.btn-dow {
+  width: 223px;
+  height: 90px;
+  border-radius: 27px;
+  border: none;
+  background-color: #2C7873;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  transition: color .1 linear;
+  text-align: left;
+  margin-left: 25px;
+  cursor: pointer
+}
+
+.btn-dow-pos {
+  width: 223px;
+  height: 90px;
+  display: flex;
+  margin: 26px 0 0 13px;
+}
+
+.btn-lesson {
+  width: 440px;
+  height: 90px;
+  border-radius: 27px;
+  border: none;
+  background-color: #2C7873;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-left: 25px;
+  cursor: pointer;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-top: 24.5px;
+  padding-bottom: 24.5px;
+  text-decoration: none;
+}
+
+.btn-lesson-pos {
+  width: 470px;
+  height: 90px;
+  margin: 50.5px 0 0 40px;
+}
+
+#dow_img {
+  width: 43px;
+}
+
+.dow_img {
+  margin-left: -50px;
+  margin-top: 22px;
+}
+
+
+/* Work Area
+==============================*/
+.full_div{
+  display: flex;
+}
+
+.work_area {
+  border-radius: 27px;
+  background-color: #fff;
+  width: 700px;
+  height: 700px;
+  margin: 50px 0 0 65px;
+}
+
+.temp {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  width: 100px;
+}
+
+.canva--pos {
+  width: 680px;
+  height: 680px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.divForInfo {
+  width: 70px;
+  height: 70px;
+  margin-top: 680px;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+
+#img_info {
+  width: 70px;
+  height: 70px;
+}

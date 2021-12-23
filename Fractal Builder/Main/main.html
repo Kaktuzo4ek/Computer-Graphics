@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="fractals.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600&display=swap');</style>
+    <link rel="stylesheet" href="main.css">
+    <title>Fractal Builder</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <div class="header__image"><img src="../img/logo.png" alt="Computer Graphics" id="logo_img"></div>
+            <div class="header__text"><a class="text__logo"href="#">Fractal Builder</a></div>
+          </div>
+
+          <div class="nav">
+            <div ><a class="nav__link" href="../Fractals/fractals.html">Fractals</a></div>
+            <div ><a class="nav__link" href="../Color Models/color_models.html">Color Models</a></div>
+            <div ><a class="nav__link" href="../Transformation/transformation.html">Transformation</a></div>
+          </div>
+        </div>
+    </header>
+
+    <div class="picturesLogo">
+      <div class="container">
+        <div class="flexForPic">
+          <div class="bgForPic"><div class="containerForImages"><img class="images" src="../img/fractal.svg"></div></div>
+          <div class="bgForPic"><div class="containerForImages"><img class="images" src="../img/color.svg"></div></div>
+          <div class="bgForPic"><div class="containerForImages"><img class="images" src="../img/transformation.png"></div></div>
+        </div>
+
+        <div class="containerForBtn">
+          <div class="flexForBtn">
+            <a class="getStartedBtn" href="../Fractals/fractals.html">Get Started</a>
+            <a class="getStartedBtn" href="../Color Models/color_models.html">Get Started</a>
+            <a class="getStartedBtn" href="../Transformation/transformation.html">Get Started</a>
+          </div>
+        </div>
+
+      </div><!--div.container-->
+    </div><!--div.picturesLogo-->
+
+    <hr class="hrForSplit">
+
+    <div class="fractalInfo">
+      <div class="containerBeforeHR">
+        <div class="heading"><h2>Information about T and H Fractals</h2></div>
+        <div class="flexFirstHeading">
+          <div class="headingSecond"><h2>T-Fractal</h2></div>
+          <div class="headingSecond"><h2>H-Fractal</h2></div>
+        </div>
+
+        <div class="flexForFractalInfo">
+          <div class="headingFractalInfo"><h3>Building a T-fractal:</h3></div>
+          <div class="headingFractalInfo"><h3>Building a H-fractal:</h3></div>
+        </div>
+
+        <div class="flexForFractalText">
+          <div class="fractalText">
+            <p>Construction starts with a unit square. First step: paint<br>
+            a 1/2 square in the center with white. Then you need to<br>
+            mentally divide the square into 4 identical squares and<br>
+            paint a square with a side of 1/4 in the center of each<br>
+            of them. Further, each of these 4 squares will again<br>
+            turn out into 4 parts, a total of 16 squares, and with<br>
+             each of them you need to do the same. Etc.</p>
+           </div>
+           <div class="verticalLine"></div>
+          <div class="fractalText rightText">
+            <p>It all starts with a figure in the shape of the letter H,<br>
+             in which the vertical and horizontal segments are<br>
+             equal. Then, to each of the 4 ends of the figure, a copy<br>
+             is drawn, reduced in half. To each end (there are<br>
+             already 16 of them) a copy of the letter H is added,<br>
+             already reduced by 4 times. Etc. In the limit, a fractal<br>
+             will turn out, which visually almost fills a certain<br>
+            square.</p>
+          </div>
+        </div>
+
+        <div class="flexForFractalInfo minusMargin">
+          <div class="headingFractalInfo"><h3>T-fractal properties:</h3></div>
+          <div class="headingFractalInfo"><h3>H-fractal properties:</h3></div>
+        </div>
+
+        <div class="flexForFractalText">
+        <div class="fractalText">
+          <p>The fractal dimension of the part painted in white in<br>
+          the end is equal to log24 = 2. It is everywhere dense in<br>
+          the original square. This means that no matter what<br>
+          point of the square we take, in any, no matter how<br>
+          small, its neighborhood there will be filled points. That<br>
+          is, as a result, almost everything became white - the<br>
+          area of the remainder is equal to 0, and the fractal<br>
+          occupies an area of 1. But the length of the border of<br>
+          the filled part is infinite.</p>
+        </div>
+
+        <div class="fractalText rightText">
+          <p>The H-fractal is dense everywhere in it. That is, in any<br>
+           neighborhood of any point of the square, there are<br>
+           fractal points. Very similar to what happens with the<br>
+           T-square. This is not accidental, because if you look<br>
+           closely, you can see that each letter H is contained<br>
+           in its own small square, which was completed<br>
+           at the same step. We can say that the H-fractal<br>
+           fills its own square (space-filling curve).<br>
+           Therefore, its fractal dimension is 2.</p>
+        </div>
+        </div>
+
+      </div><!--.containerBeforeHR-->
+    </div><!--.fractalInfo-->
+
+    <hr class="hrForSplit">
+
+    <div class="colorInfo">
+      <div class="containerBeforeHR">
+        <div class="heading"><h2>Information about Color Models</h2></div>
+        <div class="flexFirstHeading">
+          <div class="headingSecond"><h2>RGB</h2></div>
+          <div class="headingSecond"><h2>HSV</h2></div>
+        </div>
+
+        <div class="flexForText">
+          <div class="infoText">
+            <p>The RGB color model is an additive color model in<br>
+             which the red, green, and blue primary colors of light<br>
+             are added together in various ways to reproduce a<br>
+             broad array of colors. The name of the model comes<br>
+             from the initials of the three additive primary colors,<br>
+             red, green, and blue.The color is encoded by the<br>
+             gradations of the component channels. As the<br>
+             magnitude of the gradation of a channel increases,<br>
+             its intensity increases during synthesis.<br>
+             <br>
+             RGB is a device-dependent color model: different<br>
+             devices detect or reproduce a given RGB value<br>
+             differently, since the color elements (such as phosphors<br>
+             or dyes) and their response to the individual red, green,<br>
+             and blue levels vary from manufacturer to<br>
+             manufacturer, or even in the same device over time.<br>
+             Thus an RGB value does not define the same color<br>
+             across devices without some kind of color management.</p>
+          </div>
+
+          <div class="verticalLine verticalColor"></div>
+
+          <div class="infoText rightText">
+            <p>HSV is an alternative representation of the RGB color<br>
+             model developed in the 1970s by computer graphics<br>
+             researchers to more closely match how human vision<br>
+             perceives color-generating attributes. In these models,<br>
+             the colors of each shade are arranged in a radial cut<br>
+             around the central axis of neutral colors, which ranges<br>
+             from black at the bottom to white at the top.<br>
+            <br>
+            Hue - color tone (for example, red, green or blue).<br>
+            Varies in the range of 0-360°, but is sometimes<br>
+            reduced to the range 0-100 or 0-1.<br>
+            Saturation - saturation. Varies between 0-100 or 0-1.<br>
+            The larger this parameter, the "purer" the color, so<br>
+            this parameter is sometimes called color purity. And<br>
+            the closer this parameter is to zero, the<br>
+            closer the color is to neutral gray.<br>
+            Value - the value of color, or Brightness - brightness.<br>
+            Also set in the range 0-100 or 0-1.</p>
+          </div>
+        </div>
+      </div><!--.containerBeforeHR-->
+    </div><!--.colorInfo-->
+
+    <hr class="hrForSplit">
+
+    <div class="transformationInfo">
+      <div class="containerBeforeHR">
+        <div class="heading"><h2>Information about Affine Transormation</h2></div>
+          <div class="infoText">
+            <p>An affine transformation is any transformation that preserves collinearity (i.e., all points lying
+             on a line initially still lie on the line after transformation) and distance ratios (for example, the
+             midpoint of a line segment remains the midpoint after transformation). In this sense, affinity
+             indicates a special class of projective transformations that do not move any objects from the
+             affine space R ^ 3 to the plane at infinity or vice versa. Affine transformation is also called affinity.
+             <br><br>
+             Geometric contraction, expansion, expansion, reflection, rotation, shear, similarity transformations, spiral
+             similarity and translation are all affine transformations, as well as their combinations. In general, an affine
+             transform is a combination of rotations, translations, stretches, and translations.
+             <br><br>
+             Although the affine transform preserves the aspect ratio of the lines, it does not necessarily preserve the
+             angles or length. Any triangle can be transformed into any other using an affine transformation, therefore all
+             triangles are affine and in this sense are affine generalizations of congruent and similar ones.
+             <br><br>
+             A particular example of combining rotation and expansion is the rotation-enlargement transformation.</p>
+          </div>
+      </div>
+    </div>
+
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600&display=swap');</style>
+    <link rel="stylesheet" href="color_models.css">
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <title>Color Models</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <div class="header__image"><img src="../img/logo.png" alt="Computer Graphics" id="logo_img"></div>
+            <div class="header__text"><a class="text__logo" href="../Main/main.html">Fractal Builder</a></div>
+          </div>
+
+          <div class="nav">
+            <div ><a class="nav__link" href="../Fractals/fractals.html">Fractals</a></div>
+            <div ><a class="nav__link" href="#">Color Models</a></div>
+            <div ><a class="nav__link" href="../Transformation/transformation.html">Transformation</a></div>
+          </div>
+        </div>
+    </header>
+
+<div class="colorAndAreaOriginal">
+  <div class="saturAndModels">
+    <div class="saturation">
+      <p class="text text--pos" id="saturationText">Green saturation</p>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="60" class="slider" id="range_g">
+        <div class="value_satur"><span id="value_satur"></span></div>
+      </div>
+    </div>
+
+<div class="color_models_div">
+  <p class="text text--pos" id="text_color">Сolor Models</p>
+<div class="flexForModels">
+    <div class="color_model_RGB">
+      <div class="flexForValueColorRGB">
+        <p class="text sym--pos">R:</p>
+        <div class="value_color"><span id="value_r"></span></div>
+      </div>
+
+      <div class="flexForValueColorRGB">
+        <p class="text sym--g">G:</p>
+        <div class="value_color"><span id="value_g"></span></div>
+      </div>
+
+      <div class="flexForValueColorRGB">
+        <p class="text sym--b">B:</p>
+        <div class="value_color"><span id="value_b"></span></div>
+      </div>
+    </div>
+
+    <div class="color_model_HSV">
+      <div class="flexForValueColorHSV">
+        <p class="text sym--h">H:</p>
+        <div class="value_color"><span id="value_h"></span></div>
+      </div>
+
+      <div class="flexForValueColorHSV">
+        <p class="text sym--s">S:</p>
+        <div class="value_color"><span id="value_s"></span></div>
+      </div>
+
+      <div class="flexForValueColorHSV">
+        <p class="text sym--v">V:</p>
+        <div class="value_color"><span id="value_v"></span></div>
+      </div>
+    </div>
+</div>
+<div class="flexForPixelAndRadio">
+  <div class="radio_buttons">
+      <div class="form_radio_group" id="radioGroup">
+      	<div class="form_radio_group-item">
+      		<input id="radio-rgb" type="radio" name="radio" value="rgb" checked>
+      		<label for="radio-rgb">RGB</label>
+      	</div>
+      	<div class="form_radio_group-item">
+      		<input id="radio-hsv" type="radio" name="radio" value="hsv">
+      		<label for="radio-hsv">HSV</label>
+      	</div>
+      </div>
+  </div>
+        <div class="pixel_color" id="pixel"></div>
+</div>
+</div>
+
+
+    <div class="buttons">
+      <div id="upload" class="btn-upload-pos"><button class="btn-upload" type="button" name="button" id="build">Upload</button></div>
+      <div class="btn-dow-pos">
+        <button class="btn-dow" type="button" name="button" id="downloadBtn">Download</button>
+        <div class="dow_img"><img src="../img/download.png" alt="Download" id="dow_img"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="original_image">
+    <div class="work_area">
+      <canvas class="canvas_style" id="img_original" width="500" height="500"></canvas>
+    </div>
+    <p class="text text--pos">Original image</p>
+    <div class="btn-lesson-pos">
+      <a class="btn-lesson" type="button" id="lessonBtn" href="https://www.youtube.com/watch?v=-b2pAEHEQZc" target="_blank">Video lesson</a>
+    </div>
+  </div>
+
+  <div class="processed_image">
+    <div class="work_area" id="work_processed">
+      <canvas class="canvas_style" id="img_processed" width="500" height="500"></canvas>
+    </div>
+    <p class="text text--pos">Processed image</p>
+  </div>
+
+  <div class="divForInfo"><a href="../Tips/color_tips.html"><img id="img_info" src="../img/info.png"></a></div>
+</div>
+<input id="fileupload" type="file">
+<!--<canvas id="c"width="250" height="200" style="border:1px solid #000"></canvas>-->
+<script type="text/javascript" src="color_models.js"></script>
+<script src="../reimg.js"></script>
+  </body>
+</html>
